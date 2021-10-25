@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
@@ -61,9 +61,11 @@ const Radar = () => {
     
   };
   
-  
-  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  setsize(vw*.18);
+  useEffect(()=>{
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    setsize(vw*.18);
+
+  },[])
   window.addEventListener('resize', function () { 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     setsize(vw*.18);
