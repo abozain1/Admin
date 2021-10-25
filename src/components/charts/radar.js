@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import RadarChart from "react-svg-radar-chart";
 import "react-svg-radar-chart/build/css/index.css";
 
 const Radar = () => {
- 
+ const [size,setsize]=useState();
   const data = [
     {
       data: {
@@ -60,17 +60,18 @@ const Radar = () => {
     22: "22:00",
     
   };
-  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-
-let bra=vw*.18;
-
-window.addEventListener('resize', function () { 
   
-  window.location.reload(); 
+  
+  window.addEventListener('resize', function () { 
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    setsize(vw*.18);
+    
+    
 });
+
   return (
     <div>
-      <RadarChart size={bra} captions={captions} data={data} />
+      <RadarChart size={size} captions={captions} data={data} />
     </div>
   );
 };
