@@ -62,6 +62,8 @@ const Radar = () => {
   };
   
   
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  setsize(vw*.18);
   window.addEventListener('resize', function () { 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     setsize(vw*.18);
