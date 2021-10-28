@@ -40,7 +40,7 @@ const Homepage2 = () => {
         <Row>
           <Col  className={classes.col1}>
             <p className={classes.headline}>71.028 EGP</p>
-            <p>Total Value</p>
+            <p className={classes.val} >Total Value</p>
             <div className={classes.downiconholder}>
               <BiPlay className={classes.downicon} />
               <p>2%</p>
@@ -48,7 +48,7 @@ const Homepage2 = () => {
           </Col>
           <Col  className={classes.col2}>
           <p className={classes.headline}>20.000 shoe</p>
-            <p>Total Sales</p>
+            <p  className={classes.val} >Total Sales</p>
             <div className={classes.upiconholder}>
               <BiPlay className={classes.upicon} />
               <p>%5 </p>
@@ -56,7 +56,7 @@ const Homepage2 = () => {
           </Col>
           <Col  className={classes.col3}>
           <p className={classes.headline}>20.000 shoe</p>
-            <p>Avg Sales</p>
+            <p  className={classes.val} >Avg Sales</p>
             <div className={classes.downiconholder}>
               <BiPlay className={classes.downicon} />
               <p>%5</p>
@@ -64,7 +64,7 @@ const Homepage2 = () => {
           </Col>
           <Col className={classes.col4}>
           <p className={classes.headline}>1567</p>
-            <p>Total Transaction</p>
+            <p  className={classes.val} >Total Transaction</p>
             <div className={classes.upiconholder}>
               <BiPlay className={classes.upicon} />
               <p>20%</p>

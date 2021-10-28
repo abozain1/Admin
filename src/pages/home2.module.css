@@ -43,8 +43,10 @@
   font-size: 1.5vw;
   margin: 0;
 }
-.col1 p {
-  font-weight: bold;
+.val {
+  /* font-weight: bold; */
+  margin: 0vh 0vw 5vh 0vw;
+  
 }
 .col2 {
   background-color: rgb(255, 255, 255);
